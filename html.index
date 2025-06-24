@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Educational Demo – Account Recovery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://www.google.com/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #202124;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 450px;
+      padding: 48px 40px;
+      border: 1px solid #dadce0;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+      text-align: center;
+    }
+    .logo {
+      width: 75px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+    .warning {
+      color: #d93025;
+      background-color: #fce8e6;
+      padding: 12px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    input {
+      width: 100%;
+      padding: 13px 15px;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    input:focus {
+      border-color: #1a73e8;
+      outline: none;
+      box-shadow: 0 0 0 2px #e8f0fe;
+    }
+    .btn {
+      background-color: #1a73e8;
+      color: #fff;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .btn:hover {
+      background-color: #1b66c9;
+      box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3);
+    }
+    .link {
+      color: #1a73e8;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #70757a;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="logo">
+    <h1>Sign in</h1>
+    
+    <div class="warning">
+      This account is locked for excessive password failures. Recover your password.
+    </div>
+
+    <form id="recovery-form" onsubmit="return false;">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button class="btn" onclick="attemptRecovery()">Sign in</button>
+      <a href="#" class="link">Forgot your password?</a>
+    </form>
+
+    <div class="footer">
+      <a href="#" class="link">Help</a> · 
+      <a href="#" class="link">Privacy</a> · 
+      <a href="#" class="link">Terms</a>
+    </div>
+  </div>
+
+  <script>
+    function attemptRecovery() {
+      alert("This is a demo. No real recovery process occurs.");
+    }
+  </script>
+</body>
+</html>
